@@ -1,0 +1,68 @@
+{% load static %}
+{% include "dsl/header.html "%}
+
+<div class="section2">
+	<div class="container-fluid p-0">
+		<div class="sub">
+		
+	</div>
+	</div>
+</div>
+
+<div class="section3">
+	<div class="container">
+		  <div class="heading-title" style="margin-top: 4%;
+  margin-bottom: 2%;
+  font-size: 30px;">CONTACT</div>
+		
+		  <div id="fh5co-contact">
+      <div class="row">
+        <div class="col-md-4 animate-box">
+          <h3>Contact Information</h3><br>
+          <ul class="contact-info"><h5>
+            <li>P.o.Box 12185 dar es salaam</li><br>
+            <li><i class="icon-location4"></i>2floor city mallBuilding</li><br>
+            <li>Plot No:2451 Block postal code 9</li><br>
+            <li><i class="icon-phone3"></i>+ 255 753 151489</li><br>
+            <li><i class="icon-location3"></i><a>info@dashuttle.co.tz</a></li><br>
+            <li><i class="icon-globe2"></i><a>www.dashuttle.co.tz</a></li></h5>
+          </ul>
+        </div>
+        <div class="col-md-8 animate-box">
+         
+         <form method="POST" class="post-form">{% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="save btn btn-primary"> Send Comment</button>
+    </form>
+        </div>
+      </div>
+    </div>
+	</div>
+</div>
+<br>
+
+       {% include "dsl/footer.html"%}
+        <!-- Footer -->
+</div>
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
